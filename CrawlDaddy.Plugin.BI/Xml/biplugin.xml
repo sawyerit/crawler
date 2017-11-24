@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<plugin>
+	<providers>
+		<biapidomainprovider>
+			<uri>http://bizintel-ws.intranet.gdg/bidata/api/domains?count</uri>
+		</biapidomainprovider>
+		<biapipersistenceprovider>
+			<uri>http://bizintel-ws.intranet.gdg/bidata/api/portfolio</uri>
+		</biapipersistenceprovider>
+	</providers>
+	<processors>
+		<sociallink>
+			<twitter>
+				<invalidtags>twitter.com/share,twitter.com/status,twitter.com/intent,api.twitter.com</invalidtags>
+			</twitter>
+		</sociallink>
+    <parkedpage>
+      <range>
+        <lower>50.63.202.1</lower>
+        <upper>50.63.202.31</upper>
+        <type>Park Forward</type>        
+      </range>
+      <range>
+        <lower>184.168.221.1</lower>
+        <upper>184.168.221.31</upper>
+        <type>Park Forward</type>
+      </range>
+      <range>
+        <lower>50.63.202.32</lower>
+        <upper>50.63.202.63</upper>
+        <type>Static Parking</type>        
+      </range>
+      <range>
+        <lower>184.168.221.32</lower>
+        <upper>184.168.221.63</upper>
+        <type>Static Parking</type>
+      </range>      
+      <range>
+        <lower>50.63.202.64</lower>
+        <upper>50.63.202.95</upper>
+        <type>Dynamic Parking</type>
+      </range>
+      <range>
+        <lower>184.168.221.64</lower>
+        <upper>184.168.221.95</upper>
+        <type>Dynamic Parking</type>
+      </range>
+      <range>
+        <lower>50.63.202.96</lower>
+        <upper>50.63.202.127</upper>
+        <type>Cash Parking</type>
+      </range>
+      <range>
+        <lower>184.168.221.96</lower>
+        <upper>184.168.221.127</upper>
+        <type>Cash Parking</type>
+      </range>
+    </parkedpage>
+	</processors>
+</plugin>

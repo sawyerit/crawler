@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{839C0D7E-6F98-4CA3-A32C-4412CC14D71C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CrawlDaddy.Plugin.BI</RootNamespace>
+    <AssemblyName>CrawlDaddy.Plugin.BI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Abot">
+      <HintPath>..\ExternalLib\Abot.dll</HintPath>
+    </Reference>
+    <Reference Include="CsQuery">
+      <HintPath>..\ExternalLib\CsQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\ExternalLib\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalLib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigManager.cs" />
+    <Compile Include="Processors\ParkedCrawlProcessor.cs" />
+    <Compile Include="Processors\PIIFormCrawlProcessor.cs" />
+    <Compile Include="Processors\HasLoginCrawlProcessor.cs" />
+    <Compile Include="Processors\HasCartCrawlProcessor.cs" />
+    <Compile Include="Processors\RootDomainCrawlProcessor.cs" />
+    <Compile Include="Processors\SSLCrawlProcessor.cs" />
+    <Compile Include="Processors\DNSHostCrawlProcessor.cs" />
+    <Compile Include="Processors\EmailHostCrawlProcessor.cs" />
+    <Compile Include="Processors\SiteBuilderCrawlProcessor.cs" />
+    <Compile Include="Processors\WebHostCrawlProcessor.cs" />
+    <Compile Include="Processors\ShoppingCartCrawlProcessor.cs" />
+    <Compile Include="Processors\SocialLinkCrawlProcessor.cs" />
+    <Compile Include="Providers\BIApiDomainProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\BIApiPersistenceProvider.cs" />
+    <Compile Include="Providers\BIApiPersistenceProviderBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\ExternalLib\Xml\API_Dig.xml">
+      <Link>Xml\API_Dig.xml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\ExternalLib\Xml\API_Dig_malicious.xml">
+      <Link>Xml\API_Dig_malicious.xml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\ExternalLib\Xml\API_Dig_name-lookups.xml">
+      <Link>Xml\API_Dig_name-lookups.xml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Xml\biplugin.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CrawlDaddy.Core\CrawlDaddy.Core.csproj">
+      <Project>{418b561e-07c9-4c00-a941-87f1402f2733}</Project>
+      <Name>CrawlDaddy.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CrawlDaddy.Plugin\CrawlDaddy.Plugin.csproj">
+      <Project>{56c38676-a259-41aa-bbc8-f96a5c61a515}</Project>
+      <Name>CrawlDaddy.Plugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Drone.API.MarketAnalysis\Drone.API.MarketAnalysis.csproj">
+      <Project>{a880c34e-3363-4604-a27d-88df30f7fe68}</Project>
+      <Name>Drone.API.MarketAnalysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinDig\Drone.API.Dig\Drone.API.Dig.csproj">
+      <Project>{77742dd2-f292-4b7e-ab50-457453d6b0c8}</Project>
+      <Name>Drone.API.Dig</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

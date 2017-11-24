@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2e198b62-fb33-46ca-85bc-8a300c95ae10" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://bizintel-ws.intranet.gdg/BILogger/BILoggerService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BILoggerService.wsdl" MetadataType="Wsdl" ID="bf942912-2a69-40cd-8b94-1f511fb34fb6" SourceId="1" SourceUrl="http://bizintel-ws.intranet.gdg/BILogger/BILoggerService.svc?wsdl" />
+    <MetadataFile FileName="BILoggerService.disco" MetadataType="Disco" ID="bcccedd2-f69c-40c6-9c06-c6031d9f516c" SourceId="1" SourceUrl="http://bizintel-ws.intranet.gdg/BILogger/BILoggerService.svc?disco" />
+    <MetadataFile FileName="BILoggerService.xsd" MetadataType="Schema" ID="0186239e-1797-4946-b805-e3688b198b72" SourceId="1" SourceUrl="http://bizintel-ws.intranet.gdg/BILogger/BILoggerService.svc?xsd=xsd3" />
+    <MetadataFile FileName="BILoggerService1.xsd" MetadataType="Schema" ID="4e8bc473-48f9-4ed0-bcef-73a04df5dbff" SourceId="1" SourceUrl="http://bizintel-ws.intranet.gdg/BILogger/BILoggerService.svc?xsd=xsd2" />
+    <MetadataFile FileName="BILoggerService2.xsd" MetadataType="Schema" ID="f7773c2b-cb28-4c7a-824d-ff9515e620ad" SourceId="1" SourceUrl="http://bizintel-ws.intranet.gdg/BILogger/BILoggerService.svc?xsd=xsd1" />
+    <MetadataFile FileName="BILoggerService3.xsd" MetadataType="Schema" ID="45ceb443-3e5f-4308-8206-03c03a573b0a" SourceId="1" SourceUrl="http://bizintel-ws.intranet.gdg/BILogger/BILoggerService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

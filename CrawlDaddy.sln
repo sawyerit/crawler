@@ -1,0 +1,101 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrawlDaddy.Core", "CrawlDaddy.Core\CrawlDaddy.Core.csproj", "{418B561E-07C9-4C00-A941-87F1402F2733}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrawlDaddy.Plugin", "CrawlDaddy.Plugin\CrawlDaddy.Plugin.csproj", "{56C38676-A259-41AA-BBC8-F96A5C61A515}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrawlDaddy.Plugin.Debug", "CrawlDaddy.Plugin.Debug\CrawlDaddy.Plugin.Debug.csproj", "{494A1BFD-FCA7-4300-B2B1-ADA4D8595B36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrawlDaddy.Test.Unit", "CrawlDaddy.Test.Unit\CrawlDaddy.Test.Unit.csproj", "{ECE181DA-9111-42AB-ADE8-8F47A2492750}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrawlDaddy.WinService", "CrawlDaddy.WinService\CrawlDaddy.WinService.csproj", "{116F6D5B-5914-4977-98A8-9CCCBD060C82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrawlDaddy.Plugin.BI", "CrawlDaddy.Plugin.BI\CrawlDaddy.Plugin.BI.csproj", "{839C0D7E-6F98-4CA3-A32C-4412CC14D71C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drone.API.MarketAnalysis", "Drone.API.MarketAnalysis\Drone.API.MarketAnalysis.csproj", "{A880C34E-3363-4604-A27D-88DF30F7FE68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drone.API.Dig", "WinDig\Drone.API.Dig\Drone.API.Dig.csproj", "{77742DD2-F292-4B7E-AB50-457453D6B0C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drone.API.DNS", "WinDig\Drone.API.DNS\Drone.API.DNS.csproj", "{BC737490-209B-4D0D-9EBE-65F299256D12}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs2010:8080/tfs/gd
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CrawlDaddy.Core\\CrawlDaddy.Core.csproj
+		SccProjectName1 = CrawlDaddy.Core
+		SccLocalPath1 = CrawlDaddy.Core
+		SccProjectUniqueName2 = CrawlDaddy.Plugin\\CrawlDaddy.Plugin.csproj
+		SccProjectName2 = CrawlDaddy.Plugin
+		SccLocalPath2 = CrawlDaddy.Plugin
+		SccProjectUniqueName3 = CrawlDaddy.Plugin.Debug\\CrawlDaddy.Plugin.Debug.csproj
+		SccProjectName3 = CrawlDaddy.Plugin.Debug
+		SccLocalPath3 = CrawlDaddy.Plugin.Debug
+		SccProjectUniqueName4 = CrawlDaddy.Test.Unit\\CrawlDaddy.Test.Unit.csproj
+		SccProjectName4 = CrawlDaddy.Test.Unit
+		SccLocalPath4 = CrawlDaddy.Test.Unit
+		SccProjectUniqueName5 = CrawlDaddy.WinService\\CrawlDaddy.WinService.csproj
+		SccProjectName5 = CrawlDaddy.WinService
+		SccLocalPath5 = CrawlDaddy.WinService
+		SccProjectUniqueName6 = CrawlDaddy.Plugin.BI\\CrawlDaddy.Plugin.BI.csproj
+		SccProjectName6 = CrawlDaddy.Plugin.BI
+		SccLocalPath6 = CrawlDaddy.Plugin.BI
+		SccProjectUniqueName7 = Drone.API.MarketAnalysis\\Drone.API.MarketAnalysis.csproj
+		SccProjectName7 = Drone.API.MarketAnalysis
+		SccLocalPath7 = Drone.API.MarketAnalysis
+		SccProjectUniqueName8 = WinDig\\Drone.API.Dig\\Drone.API.Dig.csproj
+		SccProjectName8 = WinDig/Drone.API.Dig
+		SccLocalPath8 = WinDig\\Drone.API.Dig
+		SccProjectUniqueName9 = WinDig\\Drone.API.DNS\\Drone.API.DNS.csproj
+		SccProjectName9 = WinDig/Drone.API.DNS
+		SccLocalPath9 = WinDig\\Drone.API.DNS
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{418B561E-07C9-4C00-A941-87F1402F2733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{418B561E-07C9-4C00-A941-87F1402F2733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{418B561E-07C9-4C00-A941-87F1402F2733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{418B561E-07C9-4C00-A941-87F1402F2733}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56C38676-A259-41AA-BBC8-F96A5C61A515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56C38676-A259-41AA-BBC8-F96A5C61A515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56C38676-A259-41AA-BBC8-F96A5C61A515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56C38676-A259-41AA-BBC8-F96A5C61A515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{494A1BFD-FCA7-4300-B2B1-ADA4D8595B36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{494A1BFD-FCA7-4300-B2B1-ADA4D8595B36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{494A1BFD-FCA7-4300-B2B1-ADA4D8595B36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{494A1BFD-FCA7-4300-B2B1-ADA4D8595B36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECE181DA-9111-42AB-ADE8-8F47A2492750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECE181DA-9111-42AB-ADE8-8F47A2492750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECE181DA-9111-42AB-ADE8-8F47A2492750}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECE181DA-9111-42AB-ADE8-8F47A2492750}.Release|Any CPU.Build.0 = Release|Any CPU
+		{116F6D5B-5914-4977-98A8-9CCCBD060C82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{116F6D5B-5914-4977-98A8-9CCCBD060C82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{116F6D5B-5914-4977-98A8-9CCCBD060C82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{116F6D5B-5914-4977-98A8-9CCCBD060C82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{839C0D7E-6F98-4CA3-A32C-4412CC14D71C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{839C0D7E-6F98-4CA3-A32C-4412CC14D71C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{839C0D7E-6F98-4CA3-A32C-4412CC14D71C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{839C0D7E-6F98-4CA3-A32C-4412CC14D71C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A880C34E-3363-4604-A27D-88DF30F7FE68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A880C34E-3363-4604-A27D-88DF30F7FE68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A880C34E-3363-4604-A27D-88DF30F7FE68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A880C34E-3363-4604-A27D-88DF30F7FE68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77742DD2-F292-4B7E-AB50-457453D6B0C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77742DD2-F292-4B7E-AB50-457453D6B0C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77742DD2-F292-4B7E-AB50-457453D6B0C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77742DD2-F292-4B7E-AB50-457453D6B0C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC737490-209B-4D0D-9EBE-65F299256D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC737490-209B-4D0D-9EBE-65F299256D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC737490-209B-4D0D-9EBE-65F299256D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC737490-209B-4D0D-9EBE-65F299256D12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
